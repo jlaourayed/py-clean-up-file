@@ -4,10 +4,10 @@ import os
 class CleanUpFile:
 
     def __init__(self, filename) -> None:
-        self. filename = filename
+        self.filename = filename
 
     def __enter__(self) -> object:
         return self
 
     def __exit__(self, exc_type, exc, tb) -> None:
-            os.remove(self. filename)
+            os.remove(self.filename)
